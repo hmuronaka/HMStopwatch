@@ -14,6 +14,11 @@
 		D6DCE08A1B967AFC00DAC38B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DCE0891B967AFC00DAC38B /* Assets.xcassets */; };
 		D6DCE08D1B967AFC00DAC38B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DCE08B1B967AFC00DAC38B /* LaunchScreen.storyboard */; };
 		D6DCE0981B967AFD00DAC38B /* HMStopWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0971B967AFD00DAC38B /* HMStopWatchTests.m */; };
+		D6DCE0A71B967F7900DAC38B /* HMStopWatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0A51B967F7900DAC38B /* HMStopWatchHelper.m */; };
+		D6DCE0A81B96852A00DAC38B /* HMStopWatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0A51B967F7900DAC38B /* HMStopWatchHelper.m */; };
+		D6DCE0AA1B96854800DAC38B /* HMStopWatchHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0A91B96854800DAC38B /* HMStopWatchHelperTest.m */; };
+		D6DCE0AD1B9687D300DAC38B /* HMStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0AC1B9687D300DAC38B /* HMStopWatch.m */; };
+		D6DCE0AF1B968C1000DAC38B /* HMStopWatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0AE1B968C1000DAC38B /* HMStopWatchTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		D6DCE0931B967AFD00DAC38B /* HMStopWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMStopWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DCE0971B967AFD00DAC38B /* HMStopWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMStopWatchTests.m; sourceTree = "<group>"; };
 		D6DCE0991B967AFD00DAC38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DCE0A51B967F7900DAC38B /* HMStopWatchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMStopWatchHelper.m; path = HMStopWatch/Lib/HMStopWatchHelper.m; sourceTree = "<group>"; };
+		D6DCE0A61B967F7900DAC38B /* HMStopWatchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMStopWatchHelper.h; path = HMStopWatch/Lib/HMStopWatchHelper.h; sourceTree = "<group>"; };
+		D6DCE0A91B96854800DAC38B /* HMStopWatchHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStopWatchHelperTest.m; sourceTree = "<group>"; };
+		D6DCE0AB1B9687D300DAC38B /* HMStopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMStopWatch.h; path = HMStopWatch/Class/HMStopWatch.h; sourceTree = "<group>"; };
+		D6DCE0AC1B9687D300DAC38B /* HMStopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMStopWatch.m; path = HMStopWatch/Class/HMStopWatch.m; sourceTree = "<group>"; };
+		D6DCE0AE1B968C1000DAC38B /* HMStopWatchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStopWatchTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +74,8 @@
 		D6DCE0711B967AFC00DAC38B = {
 			isa = PBXGroup;
 			children = (
+				D6DCE0A31B967E9C00DAC38B /* Lib */,
+				D6DCE0A21B967E8D00DAC38B /* Class */,
 				D6DCE07C1B967AFC00DAC38B /* HMStopWatch */,
 				D6DCE0961B967AFD00DAC38B /* HMStopWatchTests */,
 				D6DCE07B1B967AFC00DAC38B /* Products */,
@@ -107,8 +120,28 @@
 			children = (
 				D6DCE0971B967AFD00DAC38B /* HMStopWatchTests.m */,
 				D6DCE0991B967AFD00DAC38B /* Info.plist */,
+				D6DCE0A91B96854800DAC38B /* HMStopWatchHelperTest.m */,
+				D6DCE0AE1B968C1000DAC38B /* HMStopWatchTest.m */,
 			);
 			path = HMStopWatchTests;
+			sourceTree = "<group>";
+		};
+		D6DCE0A21B967E8D00DAC38B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D6DCE0AB1B9687D300DAC38B /* HMStopWatch.h */,
+				D6DCE0AC1B9687D300DAC38B /* HMStopWatch.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		D6DCE0A31B967E9C00DAC38B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D6DCE0A51B967F7900DAC38B /* HMStopWatchHelper.m */,
+				D6DCE0A61B967F7900DAC38B /* HMStopWatchHelper.h */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DCE0A71B967F7900DAC38B /* HMStopWatchHelper.m in Sources */,
 				D6DCE0851B967AFC00DAC38B /* ViewController.m in Sources */,
+				D6DCE0AD1B9687D300DAC38B /* HMStopWatch.m in Sources */,
 				D6DCE0821B967AFC00DAC38B /* AppDelegate.m in Sources */,
 				D6DCE07F1B967AFC00DAC38B /* main.m in Sources */,
 			);
@@ -221,7 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DCE0A81B96852A00DAC38B /* HMStopWatchHelper.m in Sources */,
 				D6DCE0981B967AFD00DAC38B /* HMStopWatchTests.m in Sources */,
+				D6DCE0AF1B968C1000DAC38B /* HMStopWatchTest.m in Sources */,
+				D6DCE0AA1B96854800DAC38B /* HMStopWatchHelperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "HMStopWatch.h"
 
 @interface HMStopWatchTest : XCTestCase
 
@@ -24,9 +25,60 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+-(void)testInit {
+    
+    HMStopWatch* stopwatch = [HMStopWatch new];
+    XCTAssertEqual(stopwatch.time, 0);
+}
+
+-(void)testSleep1 {
+    
+    HMStopWatch* stopwatch = [HMStopWatch new];
+    
+    [stopwatch start];
+    sleep(1);
+    [stopwatch stop];
+    
+    double second = 1 * 1000000;
+    double ms = 5 * 1000;
+    XCTAssertEqualWithAccuracy(stopwatch.time,
+                               second,
+                               ms);
+}
+
+-(void)testContinue {
+
+    HMStopWatch* stopwatch = [HMStopWatch new];
+    
+    [stopwatch start];
+    sleep(1);
+    [stopwatch stop];
+    
+    [stopwatch start];
+    sleep(1);
+    [stopwatch stop];
+    
+    double second = 2 * 1000000;
+    double ms = 5 * 1000;
+    XCTAssertEqualWithAccuracy(stopwatch.time,
+                               second,
+                               ms);
+}
+
+-(void)testRunner {
+    
+    HMStopWatch* stopwatch = [HMStopWatch new];
+    
+    [stopwatch startWithRunner:^(HMStopWatch *stopwatch) {
+        sleep(1);
+    }];
+    
+    double second = 1 * 1000000;
+    double ms = 5 * 1000;
+    XCTAssertEqualWithAccuracy(stopwatch.time,
+                               second,
+                               ms);
+    
 }
 
 - (void)testPerformanceExample {
