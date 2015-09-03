@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D60EBBE71B98530A0039B194 /* HMStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0AC1B9687D300DAC38B /* HMStopWatch.m */; };
+		D60EBC3F1B9856F10039B194 /* HMStopWatchFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D60EBC3E1B9856F10039B194 /* HMStopWatchFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D60EBC451B9856F10039B194 /* HMStopWatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */; };
+		D60EBC4E1B9856F20039B194 /* HMStopWatchFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EBC4D1B9856F20039B194 /* HMStopWatchFrameworkTests.m */; };
+		D60EBC511B9856F20039B194 /* HMStopWatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */; };
+		D60EBC521B9856F20039B194 /* HMStopWatchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D60EBC591B9856F80039B194 /* HMStopWatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0A51B967F7900DAC38B /* HMStopWatchHelper.m */; };
+		D60EBC5A1B9856FC0039B194 /* HMStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0AC1B9687D300DAC38B /* HMStopWatch.m */; };
 		D6DCE07F1B967AFC00DAC38B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE07E1B967AFC00DAC38B /* main.m */; };
 		D6DCE0821B967AFC00DAC38B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0811B967AFC00DAC38B /* AppDelegate.m */; };
 		D6DCE0851B967AFC00DAC38B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0841B967AFC00DAC38B /* ViewController.m */; };
@@ -20,6 +27,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D60EBC461B9856F10039B194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6DCE0721B967AFC00DAC38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60EBC391B9856F10039B194;
+			remoteInfo = HMStopWatchFramework;
+		};
+		D60EBC481B9856F20039B194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6DCE0721B967AFC00DAC38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6DCE0791B967AFC00DAC38B;
+			remoteInfo = HMStopWatch;
+		};
+		D60EBC4F1B9856F20039B194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6DCE0721B967AFC00DAC38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60EBC391B9856F10039B194;
+			remoteInfo = HMStopWatchFramework;
+		};
 		D6DCE0941B967AFD00DAC38B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6DCE0721B967AFC00DAC38B /* Project object */;
@@ -29,7 +57,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D60EBC091B9855490039B194 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D60EBC521B9856F20039B194 /* HMStopWatchFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D60EBBF01B9855490039B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EBBF11B9855490039B194 /* HMStopWatch.Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMStopWatch.Framework.h; sourceTree = "<group>"; };
+		D60EBBFF1B9855490039B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EBC001B9855490039B194 /* HMStopWatch_FrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMStopWatch_FrameworkTests.m; sourceTree = "<group>"; };
+		D60EBC171B9856650039B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EBC181B9856650039B194 /* HMStopWatch-Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMStopWatch-Framework.h"; sourceTree = "<group>"; };
+		D60EBC261B9856650039B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EBC271B9856650039B194 /* HMStopWatch_FrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMStopWatch_FrameworkTests.m; sourceTree = "<group>"; };
+		D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMStopWatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60EBC3D1B9856F10039B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EBC3E1B9856F10039B194 /* HMStopWatchFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMStopWatchFramework.h; sourceTree = "<group>"; };
+		D60EBC441B9856F10039B194 /* HMStopWatchFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMStopWatchFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60EBC4C1B9856F20039B194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EBC4D1B9856F20039B194 /* HMStopWatchFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMStopWatchFrameworkTests.m; sourceTree = "<group>"; };
 		D6DCE07A1B967AFC00DAC38B /* HMStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMStopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DCE07E1B967AFC00DAC38B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6DCE0801B967AFC00DAC38B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,10 +105,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D60EBC361B9856F10039B194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60EBC411B9856F10039B194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60EBC451B9856F10039B194 /* HMStopWatchFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6DCE0771B967AFC00DAC38B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60EBC511B9856F20039B194 /* HMStopWatchFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +138,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D60EBBEE1B9855490039B194 /* HMStopWatch.Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBBF11B9855490039B194 /* HMStopWatch.Framework.h */,
+				D60EBBEF1B9855490039B194 /* Supporting Files */,
+			);
+			path = HMStopWatch.Framework;
+			sourceTree = "<group>";
+		};
+		D60EBBEF1B9855490039B194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBBF01B9855490039B194 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60EBBFD1B9855490039B194 /* HMStopWatch.FrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC001B9855490039B194 /* HMStopWatch_FrameworkTests.m */,
+				D60EBBFE1B9855490039B194 /* Supporting Files */,
+			);
+			path = HMStopWatch.FrameworkTests;
+			sourceTree = "<group>";
+		};
+		D60EBBFE1B9855490039B194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBBFF1B9855490039B194 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60EBC151B9856650039B194 /* HMStopWatch-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC181B9856650039B194 /* HMStopWatch-Framework.h */,
+				D60EBC161B9856650039B194 /* Supporting Files */,
+			);
+			path = "HMStopWatch-Framework";
+			sourceTree = "<group>";
+		};
+		D60EBC161B9856650039B194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC171B9856650039B194 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60EBC241B9856650039B194 /* HMStopWatch-FrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC271B9856650039B194 /* HMStopWatch_FrameworkTests.m */,
+				D60EBC251B9856650039B194 /* Supporting Files */,
+			);
+			path = "HMStopWatch-FrameworkTests";
+			sourceTree = "<group>";
+		};
+		D60EBC251B9856650039B194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC261B9856650039B194 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60EBC3B1B9856F10039B194 /* HMStopWatchFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC3E1B9856F10039B194 /* HMStopWatchFramework.h */,
+				D60EBC3C1B9856F10039B194 /* Supporting Files */,
+			);
+			path = HMStopWatchFramework;
+			sourceTree = "<group>";
+		};
+		D60EBC3C1B9856F10039B194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC3D1B9856F10039B194 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60EBC4A1B9856F20039B194 /* HMStopWatchFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC4D1B9856F20039B194 /* HMStopWatchFrameworkTests.m */,
+				D60EBC4B1B9856F20039B194 /* Supporting Files */,
+			);
+			path = HMStopWatchFrameworkTests;
+			sourceTree = "<group>";
+		};
+		D60EBC4B1B9856F20039B194 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60EBC4C1B9856F20039B194 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D6DCE0711B967AFC00DAC38B = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +247,12 @@
 				D6DCE0A21B967E8D00DAC38B /* Class */,
 				D6DCE07C1B967AFC00DAC38B /* HMStopWatch */,
 				D6DCE0961B967AFD00DAC38B /* HMStopWatchTests */,
+				D60EBBEE1B9855490039B194 /* HMStopWatch.Framework */,
+				D60EBBFD1B9855490039B194 /* HMStopWatch.FrameworkTests */,
+				D60EBC151B9856650039B194 /* HMStopWatch-Framework */,
+				D60EBC241B9856650039B194 /* HMStopWatch-FrameworkTests */,
+				D60EBC3B1B9856F10039B194 /* HMStopWatchFramework */,
+				D60EBC4A1B9856F20039B194 /* HMStopWatchFrameworkTests */,
 				D6DCE07B1B967AFC00DAC38B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +262,8 @@
 			children = (
 				D6DCE07A1B967AFC00DAC38B /* HMStopWatch.app */,
 				D6DCE0931B967AFD00DAC38B /* HMStopWatchTests.xctest */,
+				D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */,
+				D60EBC441B9856F10039B194 /* HMStopWatchFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +320,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D60EBC371B9856F10039B194 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60EBC3F1B9856F10039B194 /* HMStopWatchFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D60EBC391B9856F10039B194 /* HMStopWatchFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60EBC531B9856F20039B194 /* Build configuration list for PBXNativeTarget "HMStopWatchFramework" */;
+			buildPhases = (
+				D60EBC351B9856F10039B194 /* Sources */,
+				D60EBC361B9856F10039B194 /* Frameworks */,
+				D60EBC371B9856F10039B194 /* Headers */,
+				D60EBC381B9856F10039B194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMStopWatchFramework;
+			productName = HMStopWatchFramework;
+			productReference = D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D60EBC431B9856F10039B194 /* HMStopWatchFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60EBC561B9856F20039B194 /* Build configuration list for PBXNativeTarget "HMStopWatchFrameworkTests" */;
+			buildPhases = (
+				D60EBC401B9856F10039B194 /* Sources */,
+				D60EBC411B9856F10039B194 /* Frameworks */,
+				D60EBC421B9856F10039B194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D60EBC471B9856F10039B194 /* PBXTargetDependency */,
+				D60EBC491B9856F20039B194 /* PBXTargetDependency */,
+			);
+			name = HMStopWatchFrameworkTests;
+			productName = HMStopWatchFrameworkTests;
+			productReference = D60EBC441B9856F10039B194 /* HMStopWatchFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D6DCE0791B967AFC00DAC38B /* HMStopWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6DCE09C1B967AFD00DAC38B /* Build configuration list for PBXNativeTarget "HMStopWatch" */;
@@ -146,10 +376,12 @@
 				D6DCE0761B967AFC00DAC38B /* Sources */,
 				D6DCE0771B967AFC00DAC38B /* Frameworks */,
 				D6DCE0781B967AFC00DAC38B /* Resources */,
+				D60EBC091B9855490039B194 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D60EBC501B9856F20039B194 /* PBXTargetDependency */,
 			);
 			name = HMStopWatch;
 			productName = HMStopWatch;
@@ -183,6 +415,13 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = hmu;
 				TargetAttributes = {
+					D60EBC391B9856F10039B194 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D60EBC431B9856F10039B194 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D6DCE0791B967AFC00DAC38B;
+					};
 					D6DCE0791B967AFC00DAC38B = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -207,11 +446,27 @@
 			targets = (
 				D6DCE0791B967AFC00DAC38B /* HMStopWatch */,
 				D6DCE0921B967AFD00DAC38B /* HMStopWatchTests */,
+				D60EBC391B9856F10039B194 /* HMStopWatchFramework */,
+				D60EBC431B9856F10039B194 /* HMStopWatchFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D60EBC381B9856F10039B194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60EBC421B9856F10039B194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6DCE0781B967AFC00DAC38B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +485,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D60EBC351B9856F10039B194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60EBC5A1B9856FC0039B194 /* HMStopWatch.m in Sources */,
+				D60EBC591B9856F80039B194 /* HMStopWatchHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60EBC401B9856F10039B194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60EBC4E1B9856F20039B194 /* HMStopWatchFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6DCE0761B967AFC00DAC38B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +528,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D60EBC471B9856F10039B194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D60EBC391B9856F10039B194 /* HMStopWatchFramework */;
+			targetProxy = D60EBC461B9856F10039B194 /* PBXContainerItemProxy */;
+		};
+		D60EBC491B9856F20039B194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6DCE0791B967AFC00DAC38B /* HMStopWatch */;
+			targetProxy = D60EBC481B9856F20039B194 /* PBXContainerItemProxy */;
+		};
+		D60EBC501B9856F20039B194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D60EBC391B9856F10039B194 /* HMStopWatchFramework */;
+			targetProxy = D60EBC4F1B9856F20039B194 /* PBXContainerItemProxy */;
+		};
 		D6DCE0951B967AFD00DAC38B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D6DCE0791B967AFC00DAC38B /* HMStopWatch */;
@@ -264,6 +551,86 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D60EBC541B9856F20039B194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = HMStopWatchFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D60EBC551B9856F20039B194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HMStopWatchFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D60EBC571B9856F20039B194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = HMStopWatchFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HMStopWatch.app/HMStopWatch";
+			};
+			name = Debug;
+		};
+		D60EBC581B9856F20039B194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HMStopWatchFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HMStopWatch.app/HMStopWatch";
+			};
+			name = Release;
+		};
 		D6DCE09A1B967AFD00DAC38B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +764,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D60EBC531B9856F20039B194 /* Build configuration list for PBXNativeTarget "HMStopWatchFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60EBC541B9856F20039B194 /* Debug */,
+				D60EBC551B9856F20039B194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D60EBC561B9856F20039B194 /* Build configuration list for PBXNativeTarget "HMStopWatchFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60EBC571B9856F20039B194 /* Debug */,
+				D60EBC581B9856F20039B194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D6DCE0751B967AFC00DAC38B /* Build configuration list for PBXProject "HMStopWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
