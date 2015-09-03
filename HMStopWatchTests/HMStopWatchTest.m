@@ -65,6 +65,23 @@
                                ms);
 }
 
+-(void)testReset {
+    HMStopWatch* stopwatch = [HMStopWatch new];
+    
+    [stopwatch start];
+    sleep(1);
+    [stopwatch stop];
+    
+    double second = 1 * 1000000;
+    double ms = 5 * 1000;
+    XCTAssertEqualWithAccuracy(stopwatch.time,
+                               second,
+                               ms);
+    
+    [stopwatch reset];
+    XCTAssertEqual(stopwatch.time, 0);
+}
+
 -(void)testRunner {
     
     HMStopWatch* stopwatch = [HMStopWatch new];
