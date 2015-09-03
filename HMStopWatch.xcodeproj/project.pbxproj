@@ -15,6 +15,8 @@
 		D60EBC521B9856F20039B194 /* HMStopWatchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D60EBC3A1B9856F10039B194 /* HMStopWatchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D60EBC591B9856F80039B194 /* HMStopWatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0A51B967F7900DAC38B /* HMStopWatchHelper.m */; };
 		D60EBC5A1B9856FC0039B194 /* HMStopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0AC1B9687D300DAC38B /* HMStopWatch.m */; };
+		D65F76641B985993000A8A2B /* HMStopWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DCE0AB1B9687D300DAC38B /* HMStopWatch.h */; };
+		D65F76651B98599A000A8A2B /* HMStopWatchHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DCE0A61B967F7900DAC38B /* HMStopWatchHelper.h */; };
 		D6DCE07F1B967AFC00DAC38B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE07E1B967AFC00DAC38B /* main.m */; };
 		D6DCE0821B967AFC00DAC38B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0811B967AFC00DAC38B /* AppDelegate.m */; };
 		D6DCE0851B967AFC00DAC38B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DCE0841B967AFC00DAC38B /* ViewController.m */; };
@@ -326,6 +328,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60EBC3F1B9856F10039B194 /* HMStopWatchFramework.h in Headers */,
+				D65F76651B98599A000A8A2B /* HMStopWatchHelper.h in Headers */,
+				D65F76641B985993000A8A2B /* HMStopWatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +775,7 @@
 				D60EBC551B9856F20039B194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D60EBC561B9856F20039B194 /* Build configuration list for PBXNativeTarget "HMStopWatchFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -779,6 +784,7 @@
 				D60EBC581B9856F20039B194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6DCE0751B967AFC00DAC38B /* Build configuration list for PBXProject "HMStopWatch" */ = {
 			isa = XCConfigurationList;
