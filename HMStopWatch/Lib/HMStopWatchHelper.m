@@ -6,22 +6,14 @@
 //  Copyright © 2015年 hmu. All rights reserved.
 //
 
-#include <string.h>
+#import <string.h>
+#import "HMStopWatchHelper.h"
 
-#include "HMStopWatchHelper.h"
-
-HMTimeVal hm_getDifferenceTimeVal(const HMTimeVal* beginTime, const HMTimeVal* endTime) {
+double hm_getDifferenceTimeVal(const struct timeval* beginTime, const struct timeval* endTime) {
     
-    HMTimeVal result;
-    memset(&result, 0, sizeof(result));
+    double begin_ms = (double)beginTime->tv_sec * 1000000 + (double)beginTime->tv_usec;
+    double end_ms = (double)endTime->tv_sec * 1000000 + (double)endTime->tv_usec;
     
-    result.tv_sec = endTime->tv_sec - beginTime->tv_sec;
-    result.tv_usec = endTime->tv_usec - beginTime->tv_usec
-    
-    
-    
-    
-    
-    
+    return end_ms - begin_ms;
 }
 

@@ -1,16 +1,12 @@
 //
-//  HMStopWatchHelper.hpp
+//  HMStopWatchHelper.h
 //  HMStopWatch
 //
 //  Created by MuronakaHiroaki on 2015/09/02.
 //  Copyright © 2015年 hmu. All rights reserved.
 //
 
-#ifndef HMStopWatchHelper_hpp
-#define HMStopWatchHelper_hpp
+#import <sys/time.h>
 
-#include<sys/time.h>
+double hm_getDifferenceTimeVal(const struct timeval* beginTime, const struct timeval* endTime);
 
-timeval getDifferenceTimeVal(const timeval& startTime, const timeval& endTime);
-
-#endif /* HMStopWatchHelper_hpp */

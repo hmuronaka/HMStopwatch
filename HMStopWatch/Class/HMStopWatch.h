@@ -10,4 +10,16 @@
 
 @interface HMStopWatch : NSObject
 
+typedef void (^HMStopWatchRunner)(HMStopWatch* stopwatch);
+
+@property(nonatomic, readonly) double time;
+
+-(instancetype)init;
+
+-(void)start;
+-(void)stop;
+-(void)reset;
+
+-(void)startWithRunner:(HMStopWatchRunner)runner;
+
 @end
